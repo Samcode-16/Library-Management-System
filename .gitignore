@@ -1,0 +1,12 @@
+*.class
+*.log
+*.jar
+*.war
+*.ear
+bin/
+.vscode/
+.classpath
+.idea/
+# Database credentials
+src/library/config/db.properties
+
