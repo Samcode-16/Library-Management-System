@@ -151,16 +151,19 @@ Add terminal screenshots of:
 | `transactions` (MySQL table) | Tracks issued and returned books with timestamps and user IDs                 |
 | `db.properties`              | Stores database connection details (URL, username, password)                  |
 | `library_db.sql`             | SQL schema and sample data for database initialization                        |
-| `logs.txt` *(optional)*      | Keeps record of user actions and system events for debugging                  |
+
 
 
 ## Future Enhancements
 
 📊 GUI using JavaFX or Swing
+
 🌐 Web version using Spring Boot
+
 🧾 Export reports in PDF/CSV
 
-Author
+## Author
 
 **Samudyatha K Bhat**
+
 Student Developer
