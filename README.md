@@ -134,7 +134,7 @@ Add terminal screenshots of:
 <img src="images\01_Welcome_Page.png" alt = "Entering screen">
 
 - Login Pagefor Users
-<img src="images\03_LoginMember_Page.png" alt="Login screen for users>
+<img src="images\03_LoginMember_Page.png" alt="Login screen for users">
 
 - Admin Panel
 <img src="images\02_LoginAdmin_Page.png" alt="Login for admins">
