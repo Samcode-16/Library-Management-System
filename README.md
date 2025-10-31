@@ -102,6 +102,7 @@ javac -d bin -cp "lib/mysql-connector-j-9.5.0.jar" src/library/**/*.java
 ```bash
 java -cp "bin;lib/mysql-connector-j-9.5.0.jar" library.main.LibraryApp
 ```
+## Key Classes Overview
 
 | Class                                        | Responsibility                             |
 | -------------------------------------------- | ------------------------------------------ |
