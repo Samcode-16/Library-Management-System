@@ -61,34 +61,34 @@ LibraryManagementSystem/
 ##  Setup Instructions
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/Samcode-16/Library-Management-System.git
-cd Library-Management-System
+
+``` git clone https://github.com/Samcode-16/Library-Management-System.git
+cd Library-Management-System```
 
 ### 2. Set Up the Database
 
 
 1. Open MySQL and create a database:
 
-```MYSQL
+``` 
 CREATE DATABASE library_db;
-USE library_db;
+USE library_db;```
 
 2. Import the SQL file:
-```MYSQL
-SOURCE database/library_db.sql;
+```
+SOURCE database/library_db.sql;```
 
 1. Configure Database Connection
 
 Edit src/library/config/db.properties:
 
-```db.url=jdbc:mysql://localhost:3306/library_db
+``` db.url=jdbc:mysql://localhost:3306/library_db
 db.username=your_username
 db.password=your_password```
 
 4. Compile the Project
 
-```javac -d bin -cp "lib/mysql-connector-j-9.5.0.jar" src/library/**/*.java```
+``` javac -d bin -cp "lib/mysql-connector-j-9.5.0.jar" src/library/**/*.java```
 
 5. Run the Application
 
