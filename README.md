@@ -5,7 +5,7 @@ This project demonstrates database connectivity, object-oriented design, and mod
 
 ---
 
-## Features
+## Core Features
 
   **Admin and Member roles**
   - Admin can add, remove, or view all books and members.
@@ -25,23 +25,23 @@ This project demonstrates database connectivity, object-oriented design, and mod
 
 ## Project Structure
 
-LibraryManagementSystem/
-│
-├── bin/ # Compiled .class files
-├── database/
-│ └── library_db.sql # SQL schema for database setup
-├── images/ # Optional assets
-├── lib/
-│ └── mysql-connector-j-9.5.0.jar # MySQL JDBC driver
+.
 ├── src/
 │ └── library/
-│ ├── config/ # Configuration files
-│ ├── main/ # Main app entry point
-│ ├── models/ # Java model classes
-│ ├── services/ # Business logic classes
-│ └── utils/ # Utility classes
-├── .gitignore
-└── README.md
+│ ├── main/ # Main application entry point (LibraryApp.java)
+│ ├── models/ # Java model classes (Book, User, Transaction, Admin)
+│ ├── services/ # Core business logic (LibraryService, AuthService)
+│ ├── config/ # Database configuration files (db.properties)
+│ └── utils/ # Helper utilities and reusable functions
+│
+├── database/
+│ └── library_db.sql # SQL schema and sample data
+│
+├── lib/
+│ └── mysql-connector-j-9.5.0.jar # MySQL JDBC driver
+│
+├── bin/ # Compiled .class files
+├── images/ # Optional images or assets
 
 
 ---
