@@ -7,18 +7,18 @@ This project demonstrates database connectivity, object-oriented design, and mod
 
 ## Features
 
--  **Admin and Member roles**
+  **Admin and Member roles**
   - Admin can add, remove, or view all books and members.
   - Members can view, issue, and return books.
--  **Book Management**
+  **Book Management**
   - Add, list, and track book availability.
--  **User Authentication**
+  **User Authentication**
   - Secure login and registration system.
--  **Database Integration**
+  **Database Integration**
   - Uses MySQL for persistent data storage.
--  **Transaction History**
+  **Transaction History**
   - Tracks book issues and returns.
--  **Configurable Properties**
+  **Configurable Properties**
   - Database connection managed via `db.properties` file.
 
 ---
@@ -67,16 +67,18 @@ cd Library-Management-System
 
 ### 2. Set Up the Database
 
+
 1. Open MySQL and create a database:
 
-```CREATE DATABASE library_db;
-USE library_db;```
+```MYSQL
+CREATE DATABASE library_db;
+USE library_db;
 
 2. Import the SQL file:
+```MYSQL
+SOURCE database/library_db.sql;
 
-```SOURCE database/library_db.sql;```
-
-3. Configure Database Connection
+1. Configure Database Connection
 
 Edit src/library/config/db.properties:
 
