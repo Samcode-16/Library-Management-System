@@ -60,39 +60,48 @@ LibraryManagementSystem/
 
 ##  Setup Instructions
 
-### 1. Clone the Repository
+1. **Clone the Repository**
 
-``` git clone https://github.com/Samcode-16/Library-Management-System.git
-cd Library-Management-System```
+```bash
+git clone https://github.com/Samcode-16/Library-Management-System.git
+cd Library-Management-System
+```
 
-### 2. Set Up the Database
-
+2. **Set Up the Database**
 
 1. Open MySQL and create a database:
 
-``` 
+``` bash
 CREATE DATABASE library_db;
-USE library_db;```
+USE library_db;
+```
 
 2. Import the SQL file:
+```bash
+SOURCE database/library_db.sql;
 ```
-SOURCE database/library_db.sql;```
 
 1. Configure Database Connection
 
 Edit src/library/config/db.properties:
 
-``` db.url=jdbc:mysql://localhost:3306/library_db
+```java
+db.url=jdbc:mysql://localhost:3306/library_db
 db.username=your_username
-db.password=your_password```
+db.password=your_password
+```
 
 4. Compile the Project
 
-``` javac -d bin -cp "lib/mysql-connector-j-9.5.0.jar" src/library/**/*.java```
+```bash
+javac -d bin -cp "lib/mysql-connector-j-9.5.0.jar" src/library/**/*.java
+```
 
 5. Run the Application
 
-```java -cp "bin;lib/mysql-connector-j-9.5.0.jar" library.main.LibraryApp```
+```bash
+java -cp "bin;lib/mysql-connector-j-9.5.0.jar" library.main.LibraryApp
+```
 
 | Class                                        | Responsibility                             |
 | -------------------------------------------- | ------------------------------------------ |
@@ -102,7 +111,7 @@ db.password=your_password```
 | `Book.java`, `User.java`, `Transaction.java` | Data models for system entities            |
 | `Admin.java`                                 | Admin user model with elevated privileges  |
 
-Sample Console Output
+## Sample Console Output
 
 === Welcome to Library Management System ===
 1) Login
@@ -116,11 +125,38 @@ Sample Console Output
 4) My Transactions
 5) Logout
 
-Future Enhancements
+## Screenshots
+
+Add terminal screenshots of:
+
+- Enter Screen
+<img src="images\01_Welcome_Page.png" alt = "Entering screen">
+
+- Login Pagefor Users
+<img src="images\03_LoginMember_Page.png" alt="Login screen for users>
+
+- Admin Panel
+<img src="images\02_LoginAdmin_Page.png" alt="Login for admins">
+
+- Register Page
+<img src="images\04_RegisterMember_Page.png" alt="Register member page">
+
+##  Data Storage
+
+| File / Table                 | Contents                                                                      |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| `books` (MySQL table)        | Stores book details — title, author, genre, ISBN, and availability status     |
+| `users` (MySQL table)        | Contains user information — name, email, role (admin/member), and credentials |
+| `transactions` (MySQL table) | Tracks issued and returned books with timestamps and user IDs                 |
+| `db.properties`              | Stores database connection details (URL, username, password)                  |
+| `library_db.sql`             | SQL schema and sample data for database initialization                        |
+| `logs.txt` *(optional)*      | Keeps record of user actions and system events for debugging                  |
+
+
+## Future Enhancements
 
 📊 GUI using JavaFX or Swing
 🌐 Web version using Spring Boot
-📱 Mobile-friendly interface
 🧾 Export reports in PDF/CSV
 
 Author
